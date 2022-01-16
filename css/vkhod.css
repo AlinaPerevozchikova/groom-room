@@ -1,0 +1,166 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.menu:focus, .menu:hover {
+  color: #6D79EB;
+}
+
+header {
+  display: flex;
+  width: 900px;
+  margin: auto;
+  height: 120px;
+}
+
+.headr-text {
+  margin-top: -30px;
+  color: #D5D5D5;
+}
+
+.header-logo {
+  color: #6D79EB;
+  font-size: 37px;
+}
+
+.menu {
+  margin-left: auto;
+  align-self: center;
+}
+
+.menu-glav, .menu-vhot {
+  color: #D5D5D5;
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.border {
+  border-bottom: 1px solid #D5D5D5;
+}
+
+.content {
+  width: 900px;
+  margin: auto;
+}
+
+.section {
+  display: flex;
+}
+
+.left-sec {
+  flex: 1;
+}
+
+.right-sec {
+  width: 200px;
+}
+
+.left-sec_text {
+  font-size: 27px;
+  font-weight: bold;
+  margin-top: 28%;
+}
+
+.left-sec_subtext {
+  color: #777777;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.section-right {
+  width: 315px;
+  height: 305px;
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  margin-top: 5%;
+}
+
+.section-img {
+  width: 297px;
+  height: 164px;  
+  z-index: 100;
+  position: absolute;
+  margin: 20px 10px;
+}
+
+.section-right {
+  margin-top: 140px;
+}
+
+.section-right_text {
+  display: flex;
+  height: 21px;
+  margin: 30px 0 0 27px ;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.section-right_text-vkhod, .section-right_text-reg {
+  color: #000;
+  font-weight: bold;
+  z-index: 200;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.section-right_text-reg{
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-right_text :focus, a:hover {
+  color: #C7C7C7;
+}
+
+form input[type="text"],
+form input[type="submit"] {
+  width: 260px;
+  height: 48px;
+  margin: 23px 27px 0 28px;
+  color:#C7C7C7;
+  background: #F2F2F2;
+  border-radius: 8px;
+  border: #F2F2F2;
+}
+
+::placeholder { 
+  font-size: 14px;
+  line-height: 16px;
+  color: #C7C7C7;
+  font-weight: bold;
+  padding: 10px;
+}
+
+form input[type="submit"] {
+  background: #6D79EB;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+footer {
+  background: #FAFAFA;
+  height: 151px;
+  margin-top: 50px;
+}
+
+.footer-text {
+  margin: auto;
+  text-align: center;
+	color: #C7C7C7;
+	font-weight: bold;
+	font-size: 14px;
+  padding-top: 30px;
+}
