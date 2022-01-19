@@ -88,7 +88,7 @@ header {
 }
 
 form input[type="text"],
-form input[type="submit"] {
+.right-form-sub {
   width: 260px;
   height: 48px;
   margin: 23px 27px 0 28px;
@@ -107,11 +107,38 @@ form input[type="submit"] {
   padding: 10px;
 }
 
-form input[type="submit"] {
+.right-form-sub {
   background: #6D79EB;
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF;
+}
+
+.content-work {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.content-work_two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  width: 1000px;
+}
+
+.content-gallery {
+  text-align: left;
+  margin: 40px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  width: 210px;
+  height: 240px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .content-work_title {
@@ -128,17 +155,12 @@ form input[type="submit"] {
 	margin: auto;
 	margin-top: 50px;
 }
-.pov {
-	justify-content: space-evenly;
-	margin-right: 31%;
-}
 
 .gallery {
   padding: 6px;
   width: 210px;
   height: 230px;
-  left: 83px;
-  top: 37px;
+  margin: 37px 83px 0 0;
   background: #FFFFFF;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 14px;
@@ -155,6 +177,15 @@ form input[type="submit"] {
   font-weight: bold;
 }
 
+.gallery_service {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ser {
+  margin-top: 20px;
+}
+
 footer {
   background: #FAFAFA;
   height: 151px;
@@ -168,4 +199,13 @@ footer {
 	font-weight: bold;
 	font-size: 14px;
   padding-top: 30px;
+}
+
+select {
+  appearance: none;
+  border: 2px solid black;
+  padding-left: 10px;
+  margin: 0;
+  height: 30px;
+  border-radius: 6px;
 }

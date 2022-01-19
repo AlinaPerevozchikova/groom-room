@@ -15,8 +15,8 @@
         <p class="headr-text">Service fot dogs and cats</p>
       </div>
       <div class="menu">
-        <a href="#" class="menu-glav">ГЛАВНАЯ</a>
-        <a href="#" class="menu-vhot">ВХОД</a>
+        <a href="index.html" class="menu-glav">ГЛАВНАЯ</a>
+        <a href="vkhod.html" class="menu-vhot">ВХОД</a>
       </div>
     </header>
     <div class="border"></div>
@@ -29,48 +29,62 @@
           <div class="section-right">
             <div class="section-right_text">Создайте заявку</div>
             <div class="right-sec">
-              <form action="">
-                <input type="text" placeholder="Текстовое поле" />
-                <input type="text" placeholder="Текстовое поле" />
-                <input type="submit" value="Записаться" id="input" />
+              <form action="" class="right-form">
+                <input class="right-form-text" type="text" v-bind:value="vNickname" v-on:input="inNickname"
+                  placeholder="Кличка животного" />
+                <input class="right-form-text" type="text" v-bind:value="vService" v-on:input="inService"
+                  placeholder="Услуга" />
+                <button class="right-form-sub" type="button" @click="button">Записаться</button>
               </form>
             </div>
           </div>
         </div>
       </section>
       <div class="content-work">
-        <div class="content-work_title">Наши работы</div>
+        <h3 class="content-work_title">Наши работы</h3>
         <div class="content-work_gallery">
-          <div class="gallery">
-            <img class="gallery_img" src="img/2.jpg" alt="">
-            <div class="gallery_text">Dog #1</div>
+          <div class="content-gallery">
+            <img src="img/man.jpeg" alt="" class="gallery_img">
+            <div class="gallery_service ser">Услуга: исклюзивный маникюр</div>
           </div>
-          <div class="gallery">
-            <img class="gallery_img" src="img/2.jpg" alt="">
-            <div class="gallery_text">Dog #1</div>
+          <div class="content-gallery">
+            <img src="img/ok.jpg" alt="" class="gallery_img">
+            <div class="gallery_service ser">Услуга: индивидуальная стрижка и окраска</div>
           </div>
-          <div class="gallery">
-            <img class="gallery_img" src="img/2.jpg" alt="">
-            <div class="gallery_text">Dog #1</div>
+          <div class="content-gallery">
+            <img src="img/spa.jpg" alt="" class="gallery_img">
+            <div class="gallery_service ser">Услуга: спа</div>
           </div>
         </div>
-        <div class="content-work_gallery pov">
-          <div class="gallery">
-            <img class="gallery_img" src="img/2.jpg" alt="">
-            <div class="gallery_text">Dog #1</div>
-          </div>
-          <div class="gallery">
-            <img class="gallery_img" src="img/2.jpg" alt="">
-            <div class="gallery_text">Dog #1</div>
+        <h3 class="content-work_title">Ваши заявки</h3>
+        <div class="content-work_two">
+          <div class="content-gallery" v-for="text in services">
+            <img class="gallery_img" :src="text.url" alt="">
+            <div class="gallery_text">{{text.name}}</div>
+            <div class="gallery_service">Название услуги:</div>
+            <select>
+              <option>
+                {{text.service}}
+              </option>
+              <option>маникюр</option>
+              <option>стрижка</option>
+              <option>окраска</option>
+              <option>спа</option>
+            </select>
           </div>
         </div>
       </div>
     </div>
-    <footer>
-        <div class="footer-text">groom-salon.com 2000-2999</div>
-    </footer>
+  </div>
+  <footer>
+    <div class="footer-text">groom-salon.com 2000-2999</div>
+  </footer>
   </div>
   </div>
+
+
+  <script src="js/vue.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 
