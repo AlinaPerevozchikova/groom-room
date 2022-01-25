@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>groom-room</title>
-  <link href="css/vkhod.css" rel="stylesheet">
+  <link href="./css/vkhod.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,8 +15,8 @@
         <p class="headr-text">Service fot dogs and cats</p>
       </div>
       <div class="menu">
-        <a href="index.html" class="menu-glav">ГЛАВНАЯ</a>
-        <a href="vkhod.html" class="menu-vhot">ВХОД</a>
+        <a href="./public/index.html" class="menu-glav">ГЛАВНАЯ</a>
+        <a href="./public/vkhod.html" class="menu-vhot">ВХОД</a>
       </div>
     </header>
     <div class="border"></div>
@@ -53,8 +53,8 @@
   </div>
   </div>
 
-  <script src="js/vue.js"></script>
-  <script src="js/script.js"></script>
+  <script src="./js/vue.js"></script>
+  <script src="./js/script.js"></script>
 
 </body>
 

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>groom-room</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="./public/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,8 +15,8 @@
         <p class="headr-text">Service fot dogs and cats</p>
       </div>
       <div class="menu">
-        <a href="index.html" class="menu-glav">ГЛАВНАЯ</a>
-        <a href="vkhod.html" class="menu-vhot">ВХОД</a>
+        <a href="./index.php" class="menu-glav">ГЛАВНАЯ</a>
+        <a href="./public/vkhod.php" class="menu-vhot">ВХОД</a>
       </div>
     </header>
     <div class="border"></div>
@@ -44,15 +44,15 @@
         <h3 class="content-work_title">Наши работы</h3>
         <div class="content-work_gallery">
           <div class="content-gallery">
-            <img src="img/man.jpeg" alt="" class="gallery_img">
+            <img src="./public/img/man.jpeg" alt="" class="gallery_img">
             <div class="gallery_service ser">Услуга: исклюзивный маникюр</div>
           </div>
           <div class="content-gallery">
-            <img src="img/ok.jpg" alt="" class="gallery_img">
+            <img src="./public/img/ok.jpg" alt="" class="gallery_img">
             <div class="gallery_service ser">Услуга: индивидуальная стрижка и окраска</div>
           </div>
           <div class="content-gallery">
-            <img src="img/spa.jpg" alt="" class="gallery_img">
+            <img src="./public/img/spa.jpg" alt="" class="gallery_img">
             <div class="gallery_service ser">Услуга: спа</div>
           </div>
         </div>
@@ -83,8 +83,8 @@
   </div>
 
 
-  <script src="js/vue.js"></script>
-  <script src="js/script.js"></script>
+  <script src="./public/js/vue.js"></script>
+  <script src="./public/js/script.js"></script>
 
 </body>
 
